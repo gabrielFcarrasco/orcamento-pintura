@@ -1,0 +1,101 @@
+ <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="front-end\site\galeria\imagens\icone.ico" type="image/x-icon">
+    <link rel="stylesheet" href="front-end\site\style.css">
+    <title>Orçamento pintura</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div id="bemvinda">
+                <img src="front-end\site\galeria\imagens\logo.png" alt="logo" srcset="" class="logo">
+                <h1 class="h1">Bem-vindo(a)!</h1>
+            </div>
+            <article>
+                <h3>Olá! Sou Fernando, um pintor residencial dedicado a trazer vida e beleza para cada canto da sua casa. Com anos de experiência, estou aqui para oferecer um serviço personalizado e de alta qualidade, adaptado às suas necessidades e expectativas.</p>
+                <div class="h4 escolher">
+                    <h4 style="color: black; font-size: 20px;">Por que escolher meus serviços?</h4>
+                </div>
+                <ul>
+                    <li><span>Excelência na Qualidade:</span> Utilizo apenas materiais de alta qualidade e técnicas avançadas para garantir um acabamento impecável em cada projeto.</li>
+                    <li><span>Experiência e Profissionalismo:</span> Com um histórico comprovado de trabalhos bem-sucedidos, estou comprometido em entregar resultados que superem suas expectativas.</li>
+                    <li><span>Atendimento Personalizado:</span>  Cada projeto é único, e trabalho de perto com você para entender sua visão e transformar seu espaço exatamente como você imaginou.</li>
+                    <li><span>Orçamentos Transparentes:</span>  Ofereço orçamentos claros e justos, para que você saiba exatamente o que esperar sem surpresas desagradáveis.</li>
+                </ul>
+            </article>
+            <article>
+                <div class="h4 servicos">
+                    <h4 style="color: black;">Serviços oferecidos:</h4>
+                </div>
+                <ul class="ul">
+                    <li><span style="background-color: #ff9800;">Pintura Residencial:</span> Renovação completa para suas paredes internas e externas, com um acabamento impecável.</li>
+                    <li><span style="background-color: #ff9800;">Aplicação de Textura:</span> Criação de efeitos especiais e texturas para dar um toque único e sofisticado às suas paredes.</li>
+                    <li><span style="background-color: #ff9800;">Verniz:</span>Proteção e realce para superfícies de madeira, mantendo sua beleza natural e durabilidade.</li>
+                    <li><span style="background-color: #ff9800;">Massa Corrida:</span>   Preparação de paredes com massa corrida para um acabamento liso e perfeito antes da pintura.</li>
+                    <li><span style="background-color: #ff9800;">Impermeabilização de Lajes e Paredes:</span>   Soluções eficazes para evitar infiltrações e proteger sua casa contra a umidade.</li>
+                    <li><span style="background-color: #ff9800;">Pintura de Gesso em 3D:</span>Transformação de paredes com painéis de gesso 3D, criando um visual moderno e elegante.</li>
+                </ul>
+            </article>
+            <div class="slider">
+                <div class="slides">
+                    <img src="front-end\site\galeria/imagens/1.jpg" alt="" class="img">
+                    <img src="front-end\site\galeria/imagens/2.jpg" alt="" class="img">
+                    <img src="front-end\site\galeria/imagens/3.jpg" alt="" class="img">
+                    <img src="front-end\site\galeria/imagens/4.jpg" alt="" class="img">
+                    <img src="front-end\site\galeria/imagens/5.png" alt="" class="img">
+                    <img src="front-end\site\galeria/imagens/6.png" alt="" class="img">
+                </div>
+                <button style="position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                background-color: rgba(0, 0, 0, 0.5);
+                color: white;
+                border: none;
+                padding: 10px;
+                cursor: pointer;
+                z-index: 10;background-color: #a59a98;
+    height: 40px;" class="prev" onclick="moveSlides(-1)">&#10094;</button>
+                <button style="position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                background-color: rgba(0, 0, 0, 0.5);
+                color: white;
+                border: none;
+                padding: 10px;
+                cursor: pointer;
+                z-index: 10;background-color: #a59a98;
+    height: 40px;" class="next" onclick="moveSlides(1)">&#10095;</button>
+            </div>
+            <div id="orçamento" class="fundo">
+                <h2 style="text-align: center;">Solicite um Orçamento</h2>
+                <p>Está pronto para transformar seu espaço com uma nova camada de tinta? Entre em contato conosco diretamente pelo WhatsApp para obter um orçamento personalizado.</p>
+                <div class="btn-agenda">
+                    <a href="https://wa.me/5511933196506?text=Ol%C3%A1%2C%20quero%20fazer%20um%20or%C3%A7amento"><button>Solicitar Orçamento</button></a>
+                </div>
+            </div>
+<div class="fundo insta">
+    <h2>Siga-nos no Instagram</h2>
+            <p>Acompanhe nossos projetos de pintura residencial e inspire-se! Siga-nos para ver mais.</p>
+    <div class="insta-link">
+        <a href="https://www.instagram.com/pintura_ltda/" id="insta" class="link">
+            <img class="link" src="front-end/site/galeria/imagens/insta.png" alt="logo Instagram">
+            Instagram
+        </a>
+    </div>
+</div>
+            <div class="fim">
+                <h2 style="color: #3f51b5; font-size: 25px;">Seu lar, nossa arte.</h2>
+                <h1 style="font-size: 20px;">Fernando Pintura Residencial - Onde seu espaço ganha vida!</h1>
+                <img src="/front-end/site/galeria/imagens/fim.png" alt="splash" width="250">
+            </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Empresa de Pintura Residencial. Todos os direitos reservados.</p>
+    </footer>
+    <script src="front-end\site\animacao.js"></script>
+
+</body>
+</html>

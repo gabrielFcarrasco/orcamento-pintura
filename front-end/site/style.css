@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kanit:ital,wght@0,100;0,200; 0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body {
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 15px;
+    color:  #333333;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    background-color:#3f51b5;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    margin-left: 10px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #dddddd;
+}
+
+#bemvinda {
+    background-color: #dddddd;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #dddddd;
+}
+
+.logo{
+    width: 300px;
+}
+
+h1 {
+    margin: 0;
+    color: #333333;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+
+article, .fundo {
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    background-color: #ffff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    border: 1px solid #dddddd;
+}
+
+.h4 {
+    margin: 20px 0;
+    text-align: center;
+    font-size: 20px;
+}
+
+.escolher{
+    background-image: url('galeria/imagens/fundo1.png');
+    background-size: cover;
+    background-position: center;
+    color: transparent;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.servicos{
+    font-size: 25px;
+    background-image: url('galeria/imagens/fundo.png');
+    background-size: cover; 
+    background-repeat: no-repeat; /* Não repete a imagem */
+    background-position: center; /* Centraliza a imagem no botão */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.ul li{
+    font-size: 18px;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+.slider {
+    position: relative;
+    max-width: 800px;
+    max-height: 500px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.img {
+    min-width: 100%;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    height: 40px;
+    background-color: #a59a98;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+span {
+    font-weight: 700;
+    background-color: #3f51b5;
+    color: white;
+    padding: 2px 5px;
+    border-radius: 5px;
+}
+
+h2, h3, h4 {
+    color: #333333;
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.agendamento, .insta {
+    margin: 20px 0;
+}
+
+.btn-agenda {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    background-image: url('botao.png');
+    background-size: cover; /* Ajusta a imagem para cobrir todo o botão */
+  
+}
+
+button {
+    border: none;
+    background-image: url('galeria/imagens/botao.png');
+    background-size: contain; /* Ajusta a imagem para caber dentro do botão */
+    background-repeat: no-repeat; /* Não repete a imagem */
+    background-position: center; /* Centraliza a imagem no botão */
+    background-color: transparent;
+    width: 500px;
+    height: 70px;
+    border-radius:none;
+    color: white;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra ao texto para melhor visibilidade */
+    transition: 0.3s ease-in-out;
+}
+
+button:hover {
+    border: none;
+    width: 510px;
+    height: 80px;
+}
+
+.fundo.insta {
+    text-align: center;
+}
+
+.insta-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.insta-link a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333333;
+    font-size: 20px;
+}
+
+.insta-link img {
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+}
+
+.fim{
+    color: #3f51b5;
+}
+
+footer {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 10px;
+    background-color: #3f51b5;
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 2px 0;
+}
+
+#insta img {
+    width: 40px;
+    height: 40px;
+}
